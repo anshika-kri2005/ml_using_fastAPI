@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Iris Prediction</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🌸 Iris Flower Classifier</h1>
+        <p class="subtitle">Enter flower measurements to predict its species</p>
+
+        <form id="predictionForm">
+            <input type="number" step="0.1" id="sepal_length" placeholder="Sepal Length" required>
+            <input type="number" step="0.1" id="sepal_width" placeholder="Sepal Width" required>
+            <input type="number" step="0.1" id="petal_length" placeholder="Petal Length" required>
+            <input type="number" step="0.1" id="petal_width" placeholder="Petal Width" required>
+            <button type="submit">🔍 Predict</button>
+        </form>
+
+        <p id="result"></p>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
